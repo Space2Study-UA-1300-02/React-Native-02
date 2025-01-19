@@ -44,9 +44,12 @@ jobs:
           echo "sonar.coverage.exclusions=**/src/tests/**/*" >> sonar-project.properties
           echo "sonar.tests=./src/tests" >> sonar-project.properties
           echo "sonar.sourceEncoding=UTF-8" >> sonar-project.properties
+          echo "sonar.c.file.suffixes=-" >> sonar-project.properties
+          echo "sonar.cpp.file.suffixes=-" >> sonar-project.properties
+          echo "sonar.objc.file.suffixes=-" >> sonar-project.properties
           # echo "sonar.javascript.lcov.reportPaths=./src/tests/coverage/lcov.info" >> sonar-project.properties
-          # echo "sonar.testExecutionReportPaths=./test-report.xml" >> sonar-project.propertiesecho "sonar.projectKey=${{ secrets.SONAR_PROJECT_KEY }}" > sonar-project.properties
-          
+          # echo "sonar.testExecutionReportPaths=./test-report.xml" >> sonar-project.properties
+
 
       # Run SonarCloud Scan
       - name: SonarCloud Scan

@@ -14,9 +14,8 @@
     ],
     "scheme": "your-app-scheme",
     "ios": {
-      "supportsTablet": true
-      "bundleIdentifier": "com.S2S.ios" 
-
+      "supportsTablet": true,
+      "bundleIdentifier": "com.S2S.ios"
     },
     "android": {
       "adaptiveIcon": {

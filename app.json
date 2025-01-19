@@ -15,12 +15,14 @@
     "scheme": "your-app-scheme",
     "ios": {
       "supportsTablet": true
+      "bundleIdentifier": "com.S2S.ios"  #add
+
     },
     "android": {
       "adaptiveIcon": {
         "backgroundColor": "#ffffff"
       },
-      "package": "com.S2S.reactnativefrontend"
+      "package": "com.S2S.android" #add
     },
     "plugins": [
       "expo-router",

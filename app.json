@@ -19,7 +19,8 @@
     "android": {
       "adaptiveIcon": {
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.S2S.reactnativefrontend"
     },
     "plugins": [
       "expo-router",

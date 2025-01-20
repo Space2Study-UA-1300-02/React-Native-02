@@ -58,7 +58,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} 
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }} 
 
-      # Delete sonar-project.properties after  scan
+      # Delete  sonar-project.properties after  scan
       - name: Remove sonar-project.properties
         if: always()
         run: rm sonar-project.properties
